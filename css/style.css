@@ -1,0 +1,665 @@
+*{
+    -webkit-box-sizing:border-box ;
+    -moz-box-sizing:border-box ;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+ font-family: 'Archivo', sans-serif;
+font-family: 'Poppins', sans-serif;
+}
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.gril_3{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr)) ;
+    gap: 30px; 
+}
+ 
+:root{
+--main-padding: 60px;
+--main-background-color: #1a1a1a; 
+--main-color:rgb(143, 218, 45);
+}
+/* @media (max-width:767px){
+  
+    
+} */
+
+   /* ......................small screen.................... */
+   @media (min-width:768px){
+    .container{
+        width:750px;
+    }
+    }
+   /* .......................medium screen.................... */
+   @media (min-width:992px){
+    .container{
+        width:970px;
+    }
+   }
+   /* ......................large screen....................... */
+   @media (min-width:1200px){
+    .container{
+        width:1170px;
+    }
+   }
+   /* .................start header........................ */
+   .header{
+       padding-top: 10px;
+       padding-bottom: 10px;
+       background-color: #eee;
+   }
+   .header_contect ul{
+    display: flex;
+    justify-content: center;
+
+   }
+   .header_contect ul{
+     list-style: none;
+     text-decoration: none;
+   }
+   .header_contect ul li a{
+    display:block;
+     text-decoration: none;
+     color: rgb(30, 30, 30);
+     font-weight: 500;
+     margin-left: 15px;
+     margin-right: 15px;
+   }
+   .header_contect ul li a:hover{
+     color: burlywood;
+   }
+   /* ................................. */
+ @media (max-width:767px){
+    .header_contect span.icon{
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        flex-wrap: wrap;
+        width: 40px;
+        position: relative;
+    }
+    .header_contect .icon span{
+        width: 100%;
+        height: 5px;
+        margin-bottom:5px ;
+        background-color:rgb(40, 40, 40);
+    }
+    
+    .links{
+        position: relative;
+        width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+     }
+  .header .links ul{
+      flex-wrap: wrap;
+      min-width: 300px;
+      height: 200px;
+      background-color: wheat;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      position: absolute;
+      display: none;  
+      transition: 0.3s;
+      z-index: 1;
+  }
+    .header_contect ul li{
+        width: 100%;
+        height:20%;
+        padding: 10px;
+        background-color: burlywood;
+        border-bottom:1px solid rgb(40, 40, 40) ;
+        
+       }
+       .header_contect :hover ul {
+       display:block;  
+       }
+       .header_contect ul li a:hover{
+        color: #1a1a1a;
+        transform:translateX(20px);
+      }
+} 
+   /* .................end header........................ */
+
+   /* .................start home........................ */
+   .home{
+    background-image: url(../image/vegetables-set-left-black-slate.jpg);
+    background-size: cover;
+    background-position: center;
+    height:100vh ;
+   }
+   .home .home_contect{
+    display: flex;
+    justify-content:space-around;
+    align-items:flex-start;
+    flex-wrap: wrap;
+    flex-direction: column;
+   }
+   /* ............................... */
+   
+   .home .home_contect .sell{
+    font-family: 'Poppins', sans-serif;
+    margin-top: 40px;
+    width: 180px;
+    height: 180px;
+    background-color:var(--main-color);
+    border-radius:50% ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    color: var(--main-background-color);
+    }
+   .home .home_contect .sell h2{
+    font-family: 'Archivo', sans-serif;
+    font-size: 50px;
+    margin: 0;
+    padding: 0;
+   }
+   .home .home_contect .sell p{
+    font-size: 16px;
+   }
+   /* ............................... */
+   .home .home_contect .present{
+    width: 400px;
+   color: white;
+
+   }
+   .home .home_contect .present p{
+    font-size: 20px;
+   }
+   .home .home_contect .present h2{
+    font-size:60px;
+    margin: 0;
+    padding: 0;
+   }
+   /* ................................ */
+   .home .home_contect .home_link{
+     margin-top: 30px; 
+    padding: 15px 40px ;
+    background-color: rgb(177, 164, 45);
+    border-radius: 50px;
+    text-decoration:none;
+    margin-top: 20px;
+    color: white;
+   }
+   .home .home_contect .home_link a{
+    text-decoration:none;
+    margin-top: 20px;
+    color: white;
+   }
+   .home .home_contect .home_link:hover ,.home .home_contect .home_link:hover a{
+    background-color:rgb(226, 217, 138);
+    color: black;
+   } 
+    /* ............................... */
+    @media (max-width:767px){
+    .home{
+        background-position: 70% 50%;
+        height:120vh ;
+    }
+    .home .home_contect{
+        display: flex;
+        justify-content:center;
+        align-items:center;
+        flex-wrap: wrap;
+        flex-direction: column;
+        }
+        .home .home_contect .present{
+            text-align: center;
+            width: 300px;
+         }
+
+    }
+    /* .................end home........................ */
+    /* .................star area_1 ........................ */
+    .area_1{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #1a1a1a;
+    }
+    .area_1 .area_1_contect .card{
+        height: 350px;
+        color: white;
+        border-radius: 50px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .area_1 .area_1_contect .card:first-child{
+     background-image: url(../image/bbq-grill-cooked-with-hot-spicy-sichuan-pepper-sauce-is-chinese-herb.jpg);
+     background-size: cover;
+    }
+    .area_1 .area_1_contect .card:nth-child(2){
+     background-image: url(../image/top-view-burger-ingredients-wooden-table.jpg);
+     background-size: cover;
+    }
+    .area_1 .area_1_contect .card:last-child{
+     background-image: url(../image/dietary-menu-healthy-vegan-salad-vegetables-broccoli-mushrooms-spinach-quinoa-bowl-flat-lay-top-view\ \(1\).jpg);
+     background-size: cover;
+    }
+    /* .................end area_1 ........................ */
+    /* .................star area_1 ........................ */
+    .area_2{
+    padding-top: var(--main-padding);
+    padding-bottom: var(--main-padding);
+    background-color: var(--main-background-color);
+    }
+    .area_2 .area_2_contect{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .area_2 .area_2_contect div{
+       width:400px;
+       height:400px;
+       color: #eee;
+    }
+    .area_2 .area_2_contect .area_2_text h3{
+        font-family: 'Archivo', sans-serif;
+        font-weight: bold;
+       font-size: 50px;
+       margin: 0;
+    }
+    .area_2 .area_2_contect .area_2_text h4{
+       font-size: 20px;
+    }
+    .area_2 .area_2_contect .area_2_text p{
+      line-height: 2;
+    }
+    .area_2 .area_2_contect .area_2_image{
+       background-image: url(../image/top-view-steak-with-baked-potatoes-vegetable-salad.jpg);
+       background-size: cover;
+       border-radius: 15%;
+    }
+    @media (max-width:767px){
+        .area_2 .area_2_contect{
+           flex-flow: column wrap;
+           align-items: center;
+        } 
+        .area_2 .area_2_contect div{
+           width:300px;
+            height:300px;
+            color: #eee;
+            text-align: center;
+            margin-bottom: 20px;
+         }
+         .area_2 .area_2_contect .area_2_text{
+            height: 350px;
+         }
+         .area_2 .area_2_contect .area_2_text p{
+            line-height: 1.5; 
+         }
+    }
+
+    /* .................end area_2 ........................ */
+    /* .................star area_3 ........................ */
+    .area_3{
+    padding-top: var(--main-padding);
+    padding-bottom: var(--main-padding);
+    background-color: var(--main-background-color);
+    }
+    .area_3 .area_3_contect div{
+        height: 300px;
+        border-radius: 50px; 
+    }
+   
+    .area_3 .area_3_contect div:first-child{
+       background-image: url(../image/penne-pasta-tomato-sauce-with-chicken-tomatoes-wooden-table.jpg);
+       background-size: cover;
+       background-position: 50% 50%;
+    }
+    .area_3 .area_3_contect div:nth-child(2){
+       background-image: url(../image/turkish-pide-with-stuffed-meat-cheese-pieces-chicken-wooden-bowl.jpg);
+       background-size: cover;
+    }
+    .area_3 .area_3_contect div:last-child{
+       background-image: url(../image/grilled-cheeseburger-sesame-bun-with-fresh-toppings-generative-ai.jpg);
+       background-size: cover;
+       background-position: 50% 50%;
+    }
+    
+
+    /* .................end area_3 ........................ */
+/* .................star area_4 ........................ */
+.area_4{
+    padding-top: var(--main-padding);
+    padding-bottom: var(--main-padding);
+    background-color: var(--main-background-color);
+    }
+    .area_4 .area_4_contect{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .area_4 .area_4_contect div{
+       width:400px;
+       height:400px;
+       color: #eee;
+    }
+    .area_4 .area_4_contect .area_4_text h3{
+        font-family: 'Archivo', sans-serif;
+        font-weight: bold;
+       font-size: 50px;
+       margin: 0;
+    }
+    .area_4 .area_1_contect .area_4_text h4{
+       font-size: 20px;
+    }
+    .area_4 .area_4_contect .area_4_text p{
+      line-height: 2;
+    }
+    .area_4 .area_4_contect .area_4_image{
+       background-image: url(../image/Croissant-Fillings-1.jpg);
+       background-size: cover;
+       background-position: 60% 50%;
+       border-radius: 15%;
+    }
+    @media (max-width:767px){
+        .area_4 .area_4_contect{
+           flex-flow: column wrap;
+           align-items: center;
+        } 
+        .area_4 .area_4_contect div{
+           width:300px;
+            height:300px;
+            color: #eee;
+            text-align: center;
+            margin-bottom: 20px;
+         }
+         .area_4 .area_4_contect .area_4_text{
+            height: 350px;
+         }
+         .area_4 .area_4_contect .area_4_text p{
+            line-height: 1.5; 
+         }
+    }
+
+    /* .................end area_4 ........................ */
+     /* .................star area_5 ........................ */
+     .area_5{
+        padding-top: var(--main-padding);
+        padding-bottom: var(--main-padding);
+        background-color: var(--main-background-color);
+        }
+        .area_5 .area_5_contect  {
+          text-align: center; 
+          color: wheat;
+        }
+        .area_5 .area_5_contect  h2{
+          font-size: 30px;
+          margin-bottom: 30px;
+        }
+        
+        .area_5 .area_5_contect .area_5_icon{
+            display: flex;
+            flex-wrap: wrap;
+           justify-content: space-evenly;
+           align-items: center;
+            gap: 30px;  
+        }
+        .area_5 .area_5_contect .area_5_icon .area_ {
+            width: 400px;
+            text-align: center;
+        }
+        .area_5 .area_5_contect .area_5_icon .area_ h2{
+            color: #eee;
+            margin-bottom: 20px;
+        }
+        .area_5 .area_5_contect .area_5_icon .area_  .icon a{
+            text-decoration: none;
+            color: black;
+            padding: 15px 40px;
+            background-color: rgb(177, 164, 45);
+            border-radius: 50px; 
+            margin-top: 40px;
+        }
+        .area_5 .area_5_contect .area_5_icon .card_1 .image__1{
+           background-image: url(../image/pizza-pizza-filled-with-tomatoes-salami-olives.jpg);
+           background-size: cover;
+           background-position: 50% 50%;
+           border-radius: 50px; 
+           height: 400px;
+        }
+        .area_5 .area_5_contect .area_5_icon .card_2 .image__2{
+           background-image: url(../image/mixed-vegetable-salad-with-white-cheese.jpg);
+           background-size: cover;
+           background-position: 50% 50%;
+           border-radius: 50px; 
+           height: 400px;
+        }
+        .area_5 .area_5_contect .area_5_icon .card_3 .image__3{
+           background-image: url(../image/side-view-turkish-sweets-triangular-shapedbaklava-with-pistachio-platter.jpg);
+           background-size: cover;
+           background-position: 50% 50%;
+           border-radius: 50px; 
+           height: 400px;
+        }
+        .area_5 .area_5_contect .area_5_icon .card_4 .image__4{
+           background-image: url(../image/strawberry-mojito-table.jpg);
+           background-size: cover;
+           background-position: 50% 50%;
+           border-radius: 50px; 
+           height: 400px;
+        }
+        
+        @media (max-width:767px){
+            .area_5 .area_5_contect .area_5_icon .area_ {
+                width: 350px;
+                text-align: center;
+            }
+        }
+        
+    
+        /* .................end area_5 ........................ */
+        /* .................start area_6 ........................ */
+        
+        .area_6{
+            padding-top: var(--main-padding);
+            padding-bottom: var(--main-padding);
+            background-color: var(--main-background-color);
+            }
+            .area_6 .area_6_contect{
+                display: flex;
+                justify-content: space-evenly;
+            }
+            .area_6 .area_6_contect div{
+               width:400px;
+               height:400px;
+               color: #eee;
+            }
+            .area_6 .area_6_contect .area_6_text h3{
+                font-family: 'Archivo', sans-serif;
+                font-weight: bold;
+               font-size: 50px;
+               margin: 0;
+            }
+            .area_6 .area_6_contect .area_6_text h4{
+               font-size: 20px;
+            }
+            .area_6 .area_6_contect .area_6_text p{
+              line-height: 2;
+            }
+            .area_6 .area_6_contect .area_6_image{
+               background-image: url(../image/flat-lay-salad-with-chicken-sesame-seeds.jpg);
+               background-size: cover;
+               background-position: 60% 50%;
+               border-radius: 15%;
+            }
+            @media (max-width:767px){
+                .area_6 .area_6_contect{
+                   flex-flow: column wrap;
+                   align-items: center;
+                } 
+                .area_6 .area_6_contect div{
+                   width:300px;
+                    height:300px;
+                    color: #eee;
+                    text-align: center;
+                    margin-bottom: 20px;
+                 }
+                 .area_6 .area_6_contect .area_6_text{
+                    height: 350px;
+                 }
+                 .area_6 .area_6_contect .area_6_text p{
+                    line-height: 1.5; 
+                 }
+            }
+        /* .................end area_6 ........................ */
+        /* .................start area_7 ........................ */
+        .area_7{
+            background-image: url(../image/flat-lay-burger-ingredients-wooden-table.jpg);
+            background-size: cover;
+            background-position: center;
+            height:calc(100vh - 50px) ;
+           }
+           .area_7 .area_7_contect{
+            display: flex;
+            justify-content:space-around;
+            align-items:flex-start;
+            flex-wrap: wrap;
+            flex-direction: column;
+           }
+           /* ............................... */
+           .area_7 .area_7_contect .sell{
+            font-family: 'Poppins', sans-serif;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            width: 180px;
+            height: 180px;
+            background-color:var(--main-color);
+            border-radius:50% ;
+            flex-wrap: wrap;
+            flex-direction: column;
+            color: black;
+            }
+           .area_7 .area_7_contect .sell h2{
+            font-family: 'Archivo', sans-serif;
+            font-size: 50px;
+            margin: 0;
+            padding: 0;
+           }
+           .area_7 .area_7_contect .sell p{
+            font-size: 16px;
+           }
+           /* ............................... */
+           .area_7 .area_7_contect .present{
+            width: 400px;
+           color: white;
+           }
+           .area_7 .area_7_contect .present h2{
+            font-size:40px;
+            margin: 0;
+            padding: 0;
+            margin-bottom: 50px;
+           }
+           /* ................................ */
+           .area_7 .area_7_contect .area_7_date .input{
+             margin: 0;
+            padding: 10px 100px ;
+            border-radius: 50px;
+            border: none;
+            margin-bottom: 20px;
+           }
+           .area_7 .area_7_contect .area_7_date .submit{
+             margin: 0;
+            padding: 10px 30px ;
+            border-radius: 50px;
+            border: none;
+            background-color: rgb(143, 218, 45);
+            margin-left: 20px;
+           }
+            /* ............................... */
+            @media (max-width:767px){
+            .area_7{
+                background-position: 70% 50%;
+                height:calc(100vh - 100px) ;
+            }
+            .area_7 .area_7_contect{
+                display: flex;
+                justify-content:center;
+                align-items:center;
+                flex-wrap: wrap;
+                flex-direction: column;
+                }
+                .area_7 .area_7_contect .present{
+                    text-align: center;
+                    width: 300px;
+                 }
+                .area_7_date form{
+                    display: flex;
+                    justify-content:center;
+                    align-items:center;
+                    flex-wrap: wrap;
+                 }
+                 .area_7 .area_7_contect .area_7_date .input{
+                   padding: 10px 50px ;
+                  }
+            }
+            /* .................end area_7........................ */
+            /* .................start contact ........................ */
+        .contact{
+            padding-top: var(--main-padding);
+            padding-bottom: var(--main-padding);
+            background-color: var(--main-background-color);
+           }
+           .contact_contect .card{
+               flex-flow: column wrap;
+               text-align: center;
+               color: #eee;
+           }
+           .contact_contect .card .icon{
+               width: 60px;
+               height: 60px;
+               background-color:var(--main-color) ;
+               border-radius: 50%; 
+           }
+           .contact_contect .card .icon i{
+               color: var(--main-background-color); 
+               font-size: 35px;
+           }
+           .contact_contect .card h2{
+               font-size: 20px;
+           }
+           .contact_contect .card h3{
+               font-size: 16px;
+           }
+           .contact_contect .card a{
+               text-decoration: none;
+               color: rgb(177, 164, 45);
+               font-size: 16px;
+           }
+     /* .................end contact........................ */
+      /* ................. footer........................ */
+            footer{
+                padding-top: 30px;
+                padding-bottom: 20px;
+                background-color: #454545; 
+            }
+            footer .contact_contect{
+                text-align: center;
+                color: rgb(175, 169, 169);
+            }
+            footer .contact_contect p{
+                padding-bottom: 30px;
+            }
+            footer .contact_contect div{
+                border-top: 1px solid #111;
+                font-size: 15px;
+                padding-top: 20px;
+                text-align: center;
+                color: rgb(175, 169, 169);
+            }
+       /* .................end footer........................ */
